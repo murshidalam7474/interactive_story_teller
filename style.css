@@ -1,0 +1,219 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-button {
+    background-color: #d53838;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item {
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+    color: #333;
+}
+
+.dropdown-item:hover {
+    background-color: #ddd;
+}
+.l1 {
+    background-color: #8e7c06;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    margin-left: 600px;
+    
+}
+.l2 {
+    background-color: #a921db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    
+}
+.l2:hover {
+    background-color: #e63fe0;
+}
+
+.nav1 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    
+}
+
+.nav1 ul li {
+    margin-right: 20px; 
+}
+.nav1{
+    background-image: url("headerrrr.jpg");
+    border: 5px solid rgb(23, 212, 241);
+    padding: 8px;
+   
+    
+}
+
+.nav1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    padding: 10px; 
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #a921db; 
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.8); 
+  padding: 10px; 
+  border-radius: 5px; 
+  color: #fff; 
+}
+#carouselExampleCaptions {
+    max-width: 1220px; /* Set your desired width here */
+    margin: 0 auto; /* Center the carousel */
+}
+#section1{
+    background-image: url("section1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    color: #fff
+}
+
+#section2{
+    background-image: url("section2_1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    color: #fff
+}
+#section3{
+    background-image: url("section2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    color: #fff
+}
+#section1,
+#section2,
+#section3 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    color: #fff;
+    display: flex;
+    align-items: center; /* Center content vertically */
+}
+
+/* Content box within each section */
+.content-box {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: auto; /* Center horizontally */
+    max-width: 80%; /* Set your desired maximum width */
+}
+
+/* Styling for the paragraph inside the content box */
+.content-box p {
+    margin-bottom: 20px;
+}
+
+/* Style for the "Next" and "Previous" buttons */
+.next-button1,.next-button2,.next-button3,
+.prev-button1,.prev-button2,.prev-button3,
+.read-button1,.read-button2,.read-button3 {
+    background-color: #a921db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.next-button:hover,
+.prev-button:hover {
+    background-color: #e63fe0;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* ... Other styles ... */
+
+/* Media query for screens with a maximum width of 768px (typical tablet size) */
+@media (max-width: 768px) {
+    .nav1 {
+        padding: 5px; /* Reduce padding for the navigation */
+    }
+
+    .l1, .l2 {
+        margin-left: 0;
+    }
+}
+
+/* Media query for screens with a maximum width of 480px (typical mobile size) */
+@media (max-width: 480px) {
+    /* Existing styles for mobile-sized screens */
+
+    .dropdown-button {
+        padding: 8px 16px; /* Adjust padding for the dropdown button */
+    }
+
+    .nav1 ul li {
+        margin-right: 0;
+        margin-bottom: 5px; /* Reduce margin bottom for navigation items */
+    }
+
+    .l1, .l2 {
+        margin-left: 0;
+    }
+
+    /* Adjust font size for improved readability on smaller screens */
+    .dropdown-item, .l1, .l2 {
+        font-size: 14px;
+    }
+}
