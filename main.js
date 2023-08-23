@@ -39,12 +39,18 @@ document.addEventListener("DOMContentLoaded", function () {
       cwi++;
       updateWordDisplay1();
     }
+    else{
+      alert("congratulation! you read a full story");
+    }
   }
 
   function goToPreviousWord1() {
     if (cwi > 0) {
       cwi--;
       updateWordDisplay1();
+    }
+    else{
+      alert("can't go for previous its starting of story");
     }
   }
 
@@ -98,12 +104,18 @@ document.addEventListener("DOMContentLoaded", function () {
         currentWordIndex++;
         updateWordDisplay();
       }
+      else{
+        alert("congratulation! you read a full story");
+      }
     }
 
     function goToPreviousWord() {
       if (currentWordIndex > 0) {
         currentWordIndex--;
         updateWordDisplay();
+      }
+      else{
+        alert("can't go for previous its starting of story");
       }
     }
 
@@ -153,12 +165,18 @@ document.addEventListener("DOMContentLoaded", function () {
         currentWordIndex3++;
         updateWordDisplay3();
       }
+      else{
+        alert("congratulation! you read a full story");
+      }
     }
 
     function goToPreviousWord3() {
       if (currentWordIndex3 > 0) {
         currentWordIndex3--;
         updateWordDisplay3();
+      }
+      else{
+        alert("can't go for previous its starting of story");
       }
     }
 
